@@ -1,9 +1,0 @@
-FROM node:20.9
-
-WORKDIR /app
-
-COPY . .
-
-ONBUILD RUN npm install
-
-ONBUILD CMD [ "node", "." ]
